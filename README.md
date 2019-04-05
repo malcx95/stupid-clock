@@ -1,0 +1,2 @@
+# stupid-clock
+A clock
