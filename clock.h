@@ -1,5 +1,23 @@
+#ifndef CLOCK_H
+#define CLOCK_H
+
 #include <math.h>
-#include "clock.h"
+
+const int JOINT_1_LENGTH = 200;
+const int JOINT_2_LENGTH = 150;
+const int JOINT_1_OFFSET = 0;
+const int JOINT_2_OFFSET = 0;
+const int CLOCK_RADIUS = 300;
+
+struct IkRes {
+    float angle1;
+    float angle2;
+};
+
+struct vec2 {
+    float x;
+    float y;
+};
 
 float law_of_cosines(float a, float b, float c) {
     return acos((a*a + b*b - c*c) / (2*a*b));
@@ -44,3 +62,5 @@ struct vec2 hand_target(float time) {
         pos2.y * f_time + pos1.y * (1.0f - f_time)
     };
 }
+
+#endif // CLOCK_H
