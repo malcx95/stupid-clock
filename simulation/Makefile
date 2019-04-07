@@ -1,2 +1,2 @@
-sim: sim.c clock.h clock.c
-	gcc sim.c clock.c -lSDL2 -lm -o sim
+sim: sim.c ../clock.h
+	gcc sim.c -lSDL2 -lm -o sim

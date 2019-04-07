@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
-
-#include "clock.h"
+#include "../clock.h"
 
 int main() {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
